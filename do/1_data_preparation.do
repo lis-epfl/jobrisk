@@ -10,6 +10,10 @@ global output "$project/output"
 
 cd $project/do
 
+mkdir $project/dta
+mkdir $project/output
+mkdir $project/output/figures_tables_in_the_paper
+
 *append skills and abilities
 clear
 import excel using $input/Skills.xlsx, first
