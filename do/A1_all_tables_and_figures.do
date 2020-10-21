@@ -225,7 +225,8 @@ by id_SOC: gen risk_rank = _n
 sort id_SOC rank
 
 
-foreach var in aut_risk  D3_d_risk D1_d_skills D2_d_know {
+** get percentiles
+foreach var in aut_risk  {
 	xtile newvar = `var',nq(100)
 	replace `var' = newvar
 	drop newvar
@@ -244,6 +245,25 @@ keep if _merge==3
 drop _merge
 replace risk_S_occ = percentile
 drop percentile
+erase temp.dta
+
+drop D3_d_risk D1_d_skills D2_d_know 
+preserve
+	use $dta/distances.dta , clear
+	foreach var in D3_d_risk D1_d_skills D2_d_know {
+		xtile newvar = `var',nq(100)
+		replace `var' = newvar
+		drop newvar
+	}
+	rename occ2 S_occ
+	keep Occupation S_occ D3_d_risk D1_d_skills D2_d_know
+	save temp.dta, replace
+restore
+merge 1:1 Occupation S_occ using temp.dta
+keep if _merge==3
+drop _merge
+erase temp.dta
+
 
 * gen terciles
 sort aut_risk rank
