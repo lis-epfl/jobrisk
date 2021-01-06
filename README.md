@@ -34,6 +34,6 @@ The code was provided by Fabrizio Colella and Rafael Lalive.
 
 - save the file `do/0_project_folder.do`
 
-- open the file `do/00_run_all.do` to get all the results
+- open the file `do/00_run_all.do`
 
-- run it to get all the data/figures/tables related to the paper
+- run it (in Stata) to get all the data/figures/tables related to the paper
