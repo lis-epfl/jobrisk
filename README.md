@@ -1,8 +1,11 @@
 The codes in this folder generates all the risk and resilience measures, as well as all the tables and figures present in the paper:
 
-How to compete with robots: calculating the automation risk of human jobs and searching for resilient alternatives
+How to Compete with Robots: Assessing Job Automation Risks and Resilient Alternatives
 
-by Fabrizio Colella, Dario Floreano, Rafael Lalive, Nicola Nosengo and Antonio Paolillo.
+by Antonio Paolillo, Fabrizio Colella, Nicola Nosengo, Fabrizio Schiano, William Stewart, Davide Zambrano, Isabelle Chappuis, Rafael Lalive, Dario Floreano
+
+
+The code was provided by Fabrizio Colella and Rafael Lalive. 
 
 
 # Description of the folders
