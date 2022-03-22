@@ -1,4 +1,4 @@
-The codes in this folder generates all the risk and resilience measures, as well as all the tables and figures present in the paper:
+The code in this folder generates all the risk and resilience measures, as well as all the tables and figures present in the paper:
 
 _How to Compete with Robots by Assessing Job Automation Risks and Resilient Alternatives_
 
