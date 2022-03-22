@@ -1,3 +1,12 @@
-*** change the following path
+******* How To Compete with Robots
+******* Science Robotics Replication Files
+******* Fabrizio Colella - Rafael Lalive
+******* Februrary 2022
 
-global project "C:\Users\colel\Dropbox\1_RESEARCH_shared_folders\cross\fabrizio\REPLICATION_FILES_cross"
+******* This file sets the path
+
+*******************************************************************************
+
+*** change the following path 
+*global project "C:\Users\......\ScienceRoboticsReplicationFiles"
+

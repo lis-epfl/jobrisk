@@ -1,7 +1,13 @@
-clear
+******* How To Compete with Robots
+******* Science Robotics Replication Files
+******* Fabrizio Colella - Rafael Lalive
+******* Februrary 2022
 
-******* cross Risk Measures
-******* Fabrizio Colella
+******* Risk Measures
+
+*******************************************************************************
+
+clear
 
 do 0_project_folder.do 
 global input "$project/data_input"

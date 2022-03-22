@@ -1,7 +1,13 @@
-clear
+******* How To Compete with Robots
+******* Science Robotics Replication Files
+******* Fabrizio Colella - Rafael Lalive
+******* Februrary 2022
 
-******* cross DATA PREPARATION 
-******* Fabrizio Colella
+******* DATA PREPARATION 
+
+*******************************************************************************
+
+clear
 
 do 0_project_folder.do 
 global input "$project/data_input"
@@ -152,6 +158,10 @@ sort ONETSOCCode ElementID
 save $dta/know.dta , replace
 
 
+use $dta/ab_sk.dta , replace
+keep ElementName ElementID Type TRL
+bysort ElementID: keep if _n == 1
+save $dta/ab_sk_uniq.dta, replace
 
 
 
