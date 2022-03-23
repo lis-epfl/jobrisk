@@ -1324,17 +1324,12 @@ g transNorm = transition_share / r(sum)
 g trans100K = transition_share * tot_emp / 100000
 g transitions = transition_share * tot_emp
 
-version 10: table tcrisk1 tcrisk2, c(mean transitions)
+
+version 10: table tcrisk1 tcrisk2 , c(sum trans100K)
 *version 10: table tcrisk1 tcrisk2, c(mean transitions mean ri  mean D3_d_risk mean retEff freq)
 *version 10: table tcrisk1 tcrisk2 if recommended == 1, c(mean transitions mean ri mean D3_d_risk mean retEff freq )	
-collapse transitions , by(tcrisk1 tcrisk2)
-reshape wide transitions , i(tcrisk1) j(tcrisk2)
+collapse (sum) trans100K , by(tcrisk1 tcrisk2)
+reshape wide trans100K , i(tcrisk1) j(tcrisk2)
 list 
 export excel using $output/figures_tables_in_the_paper/Table_S6_transitions.xlsx, replace firstrow(variables)  
 }
-
-
-
-
-
-
